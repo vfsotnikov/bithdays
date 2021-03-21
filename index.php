@@ -23,11 +23,11 @@ ksort($birthdays);
 $nextYear = array();
 
 $today1970 = strtotime(date("d.m.") . "1970");
-
 ?>
 <?php
 require_once "head.html"
 ?>
+    <h3>Сегодня: <?php echo date("d.m.Y"); ?></h3>
     <h3>Дни рождения коллег</h3>
     <table>
     <tr>
