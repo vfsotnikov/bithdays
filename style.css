@@ -1,16 +1,19 @@
 body {
     font: 200% sans-serif;
 }
+
+.today {
+    color: red;
+}
+
+table {
+    font: 120% sans-serif;
+}
+
 th {
     background: #ffa500;
-
-    /*color: white; // Цвет текста*/
-   }
-
-/*td {
-    background: navy; // Цвет фона ячеек
 }
-*/
+
 .even {
     background: darkgray;
 }
@@ -19,6 +22,21 @@ th {
     background: white;
 }
 
-.birthday {
+/*.birthday {
     background: red;
+}
+*/
+
+@-webkit-keyframes pulsate {
+    50% { color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff; }
+}
+@keyframes pulsate {
+    50% { color: #fff; text-shadow: 0 -1px rgba(0,0,0,.3), 0 0 5px #ffd, 0 0 8px #fff; }
+}
+.birthday {
+    color: rgb(245,245,245);
+    text-shadow: 0 -1px rgba(0,0,0,.1);
+    background: green;
+    -webkit-animation: pulsate 1.2s linear infinite;
+    animation: pulsate 1.2s linear infinite;
 }
